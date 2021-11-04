@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     background-color: #8AE3FF;
-    width: 150%;
+    width: 100%;
     height: 465px;
     left: 50%;
     border-radius: 100%;
@@ -77,6 +77,7 @@
 
 .book img{
     width: 100%;
+    max-width: 320px;
 }
 
 /* section02 end */
@@ -85,6 +86,7 @@
     position: relative;
     padding-left: 0;
     padding-right: 0;
+    width: 90%;
 }
 .text-box::after{
     position: absolute;
@@ -121,29 +123,39 @@
 }
 .speech-bubble{
     position: relative;
-    padding: 100px 70px 210px;
+    height: 100%;
+    padding: 60px 70px 100px;
     background-color: #fff;
+    border-radius: 120px;
 }
-.speech-bubble::after{
+.speech-bubble::before{
     content: '';
     position: absolute;
     right: 0;
-    bottom: -59px;
+    bottom: -5px;
     width: 0px;
     height: 0px;
-    border-left: 60px solid transparent;
-    border-top: 60px solid #fff;
+    border-left: 120px solid transparent;
+    border-top: 120px solid #fff;
+    z-index: -1;
+}
+.deco-line{
+    position: relative;
+    color: #2034EA;
+    margin-bottom: 30px;
 }
 .speech-bubble span{
-    position: absolute;
-    left: 50%;
-    bottom: 100px;
-    transform: translateX(-50%);
+    position: relative;
+    display: block;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: #666;
 }
 .speech-bubble span::after{
     content: '';
     position: absolute;
-    top: -50px;
+    bottom: 1px;
     left: 50%;
     transform: translateX(-50%);
     width: 50px;
@@ -172,10 +184,20 @@
 .event .title{
     font-size: 40px;
 }
+.period{
+    color: #828282;
+    margin-bottom: 30px;
+}
+.event .event-wrap{
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+}
+
 
 .event01{
     background-color: #8AE3FF;
-    border-radius: 0px 653px 0px 0px;
+    border-radius: 0px 400px 0px 0px;
 }
 .event01 .event-num::before{
     content: '';
@@ -197,8 +219,14 @@
     z-index: -999;
 }
 
+.event01 .event-wrap .caption{
+    position: absolute;
+    color: #2034EA;
+    top: -20px;
+    left: -20px;
+    z-index: 90;
+}
 .swiper{
-    width: 450px;
     height: 365px;
 }
 .swiper-slide{
@@ -225,13 +253,22 @@
     background: url(../images/cup5.jpg) center no-repeat;
     background-size: cover;
 }
+.swiper-pagination{
+    display: inline-block;
+    width: unset;
+    position: absolute;
+    left: unset;
+    right: 10px;
+    color: #2034EA;
+}
+
 
 /* evnet1 end */
 
 .event02{
     position: relative;
     background-color: #fff;
-    border-radius: 653px 0px 0px 0px;
+    border-radius: 400px 0px 0px 0px;
 }
 .event02 .event-num::before{
     content: '';
@@ -260,17 +297,53 @@
     background-color: #8AE3FF;
     z-index: -100;
 }
+
+.ticket-bg{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90.15deg, #C9EEFA 11.73%, #FFE3E3 81.95%);
+}
+.event02 .event-caution{
+    width: 450px;
+}
+
+
+/* ============
+media
+============ */
+
+
+@media(max-width:700px){
+    .first-circle{
+        width: 150%;
+    }
+}
+@media(max-width:540px){
+    .speech>.col-sm-6:last-child{
+        margin-top: 35px;
+    }
+    .speech-bubble{
+        padding: 30px 53px 60px;
+    }
+}
+@media(max-width:500px){
+    .text-box-wrap{
+        flex-direction: column;
+    }
+    .event01-wrap{
+        width: 90%;
+    }
+}
+
+
+
+
+/* =========================== */
+
+/* 
 @media(min-width:380px){
     .first-circle{
         width: 590px;
-    }
-}
-@media(min-width:576px){
-    .speech{
-        flex-wrap: nowrap;
-    }
-    .speech-bubble:first-child{
-        margin-right: 40px;
     }
 }
 @media(min-width:758px){
@@ -285,13 +358,6 @@
         padding: 80px 175px;
         justify-content: space-between;
     }
-
-
-
-
-    /* ======================= */
-
-
     
 .title .circle{
     width: 90px;
@@ -325,12 +391,6 @@
     padding: 25px 0;
 }
 
-.book img{
-    width: 100%;
-}
-
-/* section02 end */
-
 .text-box{
     position: relative;
     padding-left: 0;
@@ -358,16 +418,12 @@
     font-size: 70px;
 }
 
-/* section03 end */
-
 .writer-say{
     padding: 80px 0;
 }
 
-/* section04 end */
 .speech{
     margin-bottom: 200px;
-    flex-wrap: wrap;
 }
 .speech-bubble{
     position: relative;
@@ -380,8 +436,6 @@
     bottom: 100px;
     transform: translateX(-50%);
 }
-
-/* section05 end */
 
 .event{
     position: relative;
@@ -459,4 +513,4 @@
     background-color: #8AE3FF;
     z-index: -100;
 }
-}
+} */
