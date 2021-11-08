@@ -44,7 +44,9 @@ font-family: 'Palanquin', sans-serif; */
     }
 }
 @media(max-width:500px){
-    
+    .container{
+        width: 95%;
+    }
     .event-wrap{
         width: 90%;
     }
