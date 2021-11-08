@@ -506,7 +506,29 @@ media
     .text-box-wrap{
         flex-direction: column;
     }
+    /* slider */
+    .wrap{
+        width: 80%;
+    }
+    .swiper{
+        height: 250px;
+    }
+    /* tiket */
+    .ticket::before{
+        left: 50px;
+    }
+    .ticket::after{
+        width: 80px;
+        height: 80px;
+    }
+    .ticket-text{
+        transform: translate(-50%, -50%);
+    }
+    .ticket-text p{
+        width: 150px;
+        margin: 0 auto;
+    }
 }
-@media(max-width:555px){
+@media(max-width:500px){
 
 }
