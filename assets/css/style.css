@@ -495,7 +495,7 @@ media
         margin: 30px 0 30px;
     }
     .speech>.col-md-6:last-child{
-        margin-top: 35px;
+        margin-top: 25px;
     }
 }
 @media(max-width:600px){
@@ -524,6 +524,9 @@ media
     }
 }
 @media(max-width:500px){
+    .main{
+        margin-bottom: 100px;
+    }
     .writer{
         padding: 20px 0;
     }
@@ -580,30 +583,69 @@ media
     .text-box span{
         font-size: 32px;
     }
+    .writer-say{
+        padding: 50px 0;
+    }
+    .writer-say p{
+        padding: 0 42px;
+    }
 
-    
+    .speech{
+        margin-bottom: 100px;
+    }
+    .speech-bubble{
+        padding: 45px 35px 65px;
+        border-radius: 80px;
+    }
+    .speech-bubble span{
+        margin: 20px 0 30px;
+        padding-bottom: 20px;
+    }
+
+    .event{
+        padding-top: 65px;
+        padding-bottom: 20px;
+    }
     .event01{
-        border-radius: 0px 200px 0px 0px;
+        border-radius: 0px 175px 0px 0px;
     }
     .event02{
-        border-radius: 200px 0px 0px 0px;
+        border-radius: 175px 0px 0px 0px;
     }
     .event-num{
         width: 100px;
-        height: 100px;
+        height: 85px;
     }
     .num-wrap{
         transform: translateY(17px);
     }
-    .event01 .event-num::before{
+    .event01 .event-num::before,
+    .event02 .event-num::before{
         width: 100px;
         height: 100px;
+    }
+    .event .title{
+        font-size: 20px;
+    }
+    .notification{
+        font-size: 16px;
+    }
+    .event .period{
+        font-size: 14px;
+        padding-top: 12px;
+    }
+    .event-caution{
+        padding: 18px;
     }
     .wrap{
         width: 90%;
     }
+    .ticket-bg{
+        height: 145px;
+    }
     .ticket-text p{
         font-size: 60px;
+        line-height: 1;
     }
     .event01 .caption{
         left: -10px;
