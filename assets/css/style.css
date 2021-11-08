@@ -525,26 +525,47 @@ media
 }
 @media(max-width:500px){
     .writer{
-        padding: 15px 0;
+        padding: 20px 0;
+    }
+    .writer p{
+        font-size: 14px;
+    }
+    .writer P::before{
+        width: 35px;
+        transform: translate(-89px, -50%);
+    }
+    .writer P::after{
+        width: 35px;
+        transform: translate(89px, -50%);
+    }
+    .writer h3{
+        font-size: 22px;
     }
     .anniversary{
-        width: 190px;
+        width: 175px;
         height: 60px;
     }
     .anniversary span{
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
+        width: 57px;
+        height: 57px;
+        line-height: 57px;
         font-size: 20px;
     }
     .anniversary span:nth-child(2){
-        left: 45px;
+        left: 40px;
     }
     .anniversary span:nth-child(3){
-        left: 90px;
+        left: 80px;
     }
     .anniversary span:nth-child(4){
-        left: 135px;
+        left: 120px;
+    }
+
+    .main .period{
+        font-size: 14px;
+    }
+    .book img{
+        width: 175px;
     }
 
     .title h2::after{
@@ -553,8 +574,30 @@ media
     .title h2{
         font-size: 20px;
     }
+    .text-box-wrap{
+        padding: 15px 26px;
+    }
     .text-box span{
         font-size: 32px;
+    }
+
+    
+    .event01{
+        border-radius: 0px 200px 0px 0px;
+    }
+    .event02{
+        border-radius: 200px 0px 0px 0px;
+    }
+    .event-num{
+        width: 100px;
+        height: 100px;
+    }
+    .num-wrap{
+        transform: translateY(17px);
+    }
+    .event01 .event-num::before{
+        width: 100px;
+        height: 100px;
     }
     .wrap{
         width: 90%;
