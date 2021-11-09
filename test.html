@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: flex;
+        }
+        .wrap div{
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            background: linear-gradient(162deg, rgba(255,227,227,1) 23%, rgba(228,233,238,1) 40%, rgba(201,238,250,1) 70%);
+            background-size: 200% 200%;
+        }
+        .box1 {
+            animation: bg-circle1 7s ease infinite;
+        }
+        .box2 {
+            animation: bg-circle2 7s ease infinite;
+        }
+
+
+        @keyframes bg-circle1 {
+            0%{background-position:17% 0%}
+            50%{background-position:84% 100%}
+            100%{background-position:17% 0%}
+        }
+        @keyframes bg-circle2 {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

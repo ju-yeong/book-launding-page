@@ -18,6 +18,12 @@
     left: 50%;
     border-radius: 100%;
     transform: translate(-50%,-335px);
+
+    animation: circle-down 0.7s cubic-bezier(.7,.86,.78,1);
+}
+@keyframes circle-down {
+    from{top:-150px;}
+    to{top:0px;}
 }
 .first-circle span{
     color: #fff;
@@ -442,6 +448,9 @@
     width: 100%;
     height: 200px;
     background: linear-gradient(90.15deg, #C9EEFA 11.73%, #FFE3E3 81.95%);
+    background-size: 200% 200%;
+
+    animation: pink-blue-bg 4s ease infinite;
 }
 .ticket-text{
     position: absolute;
@@ -449,15 +458,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    color: #2034EA;
+    mix-blend-mode: color-burn;
 }
-.ticket-text>span{
+/* .ticket-text>span{
     display: block;
     color: #43D2FF;
-}
+} */
 .ticket-text p{
     font-size: 60px;
-    color: #2034EA;
+    /* color: #2034EA; */
     font-weight: 700;
+
+    /* mix-blend-mode: hard-light; */
+    mix-blend-mode: color-dodge;
+
     /* color: #fff;
     -webkit-text-stroke: 1px #2034EA; */
 }
@@ -488,19 +503,48 @@
     width: 100%;
     height: 2300px;
     overflow: hidden;
+
+    z-index: -999;
 }
 .bg-circle{
     /* position: relative; */
+
+
     position: absolute;
-    background: linear-gradient(325.96deg, #C9EEFA 12.68%, #E4E9EE 64.81%, #FFE3E3 85.21%);
+    background: linear-gradient(162deg, rgba(255,227,227,1) 23%, rgba(228,233,238,1) 40%, rgba(201,238,250,1) 70%);
     border-radius: 100%;
+    background-size: 200% 200%;
+}
+.move-right{
+    position: absolute;
+    
+    top: 108px;
+    left: -300px;
+    opacity: 0;
+
+    animation: move-right 1.4s cubic-bezier(.7,.86,.78,1);
+    /* animation-delay: 0.7s; */
+    animation-fill-mode: forwards;
+}
+@keyframes move-right {
+    0%{
+        left: -300px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
 }
 .bg-circle-01{
-    top: 108px;
-    left: 0px;
     width: 1100px;
     height: 1100px;
     z-index: -999;
+
+    animation: pink-blue-bg 5s ease infinite;
 }
 .bg-circle-02{
     top: 940px;
@@ -508,6 +552,8 @@
     width: 1100px;
     height: 1100px;
     z-index: -998;
+
+    animation: pink-blue-bg 8s ease infinite;
 }
 .bg-circle-03{
     top: 1500px;
@@ -515,6 +561,14 @@
     width: 500px;
     height: 500px;
     z-index: -997;
+
+    animation: pink-blue-bg 4s ease infinite;
+}
+
+@keyframes pink-blue-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 /* background end */
