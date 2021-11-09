@@ -591,7 +591,7 @@ media
 }
 @media(max-width:500px){
     .main{
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
     .writer{
         padding: 20px 0;
@@ -699,6 +699,7 @@ media
         font-size: 20px;
     }
     .notification{
+        padding-top: 12px;
         font-size: 16px;
     }
     .event .period{
