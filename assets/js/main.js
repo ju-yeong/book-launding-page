@@ -15,3 +15,18 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+// scrolltriger animaion
+
+
+ScrollTrigger.create({
+  trigger: ".sec04-img4",
+  start: "10px 50px",
+  end: "+=150",
+  toggleActions: 'play reverse none reverse',
+  toggleClass: {
+      targets: ".sec04-img4", 
+      className: "w-100"
+  }
+});
