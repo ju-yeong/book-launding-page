@@ -19,14 +19,23 @@ var swiper = new Swiper(".mySwiper", {
 
 // scrolltriger animaion
 
+$(".event01>.event-num").each(function(){
+  ScrollTrigger.create({
+    // markers: true,
+    trigger: ".event01>.event-num",
+    toggleClass: {
+      targets: ".event01>.event-num", 
+      className: "event-num-show"
+    }
+  });
+});
 
-ScrollTrigger.create({
-  trigger: ".sec04-img4",
-  start: "10px 50px",
-  end: "+=150",
-  toggleActions: 'play reverse none reverse',
-  toggleClass: {
-      targets: ".sec04-img4", 
-      className: "w-100"
-  }
+$(".event02>.event-num").each(function(){
+  ScrollTrigger.create({
+    trigger: ".event02>.event-num",
+    toggleClass: {
+      targets: ".event02>.event-num", 
+      className: "event-num-show"
+    }
+  });
 });

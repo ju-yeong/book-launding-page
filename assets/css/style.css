@@ -368,22 +368,25 @@
     top: 0;
     left: 0;
     margin: 0 auto;
-    background: linear-gradient(320deg, rgba(32, 52, 234, 0) 100%, #2034EA 92.77%);
+    background:  linear-gradient(315deg, rgba(32, 52, 234, 0) 35.3%, #2034EA 50.26%);
     border-radius: 100%;
-    animation-fill-mode: forwards;
+    background-position: 100% 100%;
+
+    background-size: 300% 300%;
 }
 
 .event01 .event-num-show::before{
-    animation: event-gradient01 0.7s ease-in-out;
+    animation: event-gradient 0.7s ease-in-out;
     animation-delay: 0.7s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes event-gradient01{
+@keyframes event-gradient{
     from{
-        background: linear-gradient(320deg, rgba(32, 52, 234, 0) 100%, #2034EA 92.77%)
+        background-position: 100% 100%;
     }
     to{
-        background: linear-gradient(320deg, rgba(32, 52, 234, 0) 23.96%, #2034EA 92.77%);
+        background-position: 30% 90%;
     }
 }
 
@@ -470,12 +473,18 @@
     top: 0;
     left: 0;
     margin: 0 auto;
-    background: linear-gradient(320deg, rgba(255, 227, 227, 0) 24.05%, rgba(255, 227, 227, 0.593467) 50.25%, #FFE3E3 93.97%);
+    background: linear-gradient(315deg, rgba(255, 227, 227, 0) 35.05%, #FFE3E3 50%);
     border-radius: 100%;
+    background-position: 100% 100%;
+
+    background-size: 300% 300%;
 }
-/* .event02 .num-wrap{
-    color: #FF9B9B;
-} */
+.event02 .event-num-show::before{
+    animation: event-gradient 0.7s ease-in-out;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
 .event02 .title,
 .event02 .num-wrap{
     color: #2034EA;
