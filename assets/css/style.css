@@ -75,7 +75,8 @@
     transform: translateY(20px);
 
     animation: show-up 0.7s cubic-bezier(.7,.86,.78,1);
-    animation-delay: 1.4s;animation-fill-mode: forwards;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
 }
 .writer{
     padding: 45px 0;
