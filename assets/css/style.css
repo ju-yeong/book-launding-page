@@ -18,7 +18,6 @@
     left: 50%;
     border-radius: 100%;
     transform: translate(-50%,-335px);
-
     animation: circle-down 0.7s cubic-bezier(.7,.86,.78,1);
 }
 @keyframes circle-down {
@@ -30,22 +29,7 @@
     position: absolute;
     bottom: 70px;
     font-weight: 300;
-
-    /* opacity: 0;
-    animation: circle-text-down 0.7s cubic-bezier(.7,.86,.78,1);
-    animation-delay: 0.7s;
-    animation-fill-mode: forwards; */
 }
-/* @keyframes circle-text-down {
-    from{bottom:140px;}
-    to{
-        opacity: 1;
-        bottom:70px;
-    }
-} */
-
-/* section01 end */
-
 .main{
     margin-bottom: 160px;
     font-family: 'Noto Serif KR', serif;
@@ -69,11 +53,8 @@
     border-radius: 100%;
     font-size: 12px;
     line-height: 80px;
-
-    
     opacity: 0;
     transform: translateY(20px);
-
     animation: show-up 0.7s cubic-bezier(.7,.86,.78,1);
     animation-delay: 1.4s;
     animation-fill-mode: forwards;
@@ -327,16 +308,13 @@
     padding-top: 20px;
     margin-bottom: 30px;
 }
-
 .event-caution{
     padding: 30px;
     font-size: 14px;
 }
-
 .event-caution li{
     position: relative;
 }
-
 .event-caution li::after{
     position: absolute;
     content: '';
@@ -347,14 +325,12 @@
     height: 2px;
     border-radius: 100%;
 }
-
 .event01 .event-caution li::after{
     background-color: #fff;
 }
 .event02 .event-caution li::after{
     background-color: #43D2FF;
 }
-
 /* event common end */
 
 
@@ -376,13 +352,11 @@
 
     background-size: 300% 300%;
 }
-
 .event01 .event-num-show::before{
     animation: event-gradient 0.7s ease-in-out;
     animation-delay: 0.7s;
     animation-fill-mode: forwards;
 }
-
 @keyframes event-gradient{
     from{
         background-position: 100% 100%;
@@ -391,7 +365,6 @@
         background-position: 30% 90%;
     }
 }
-
 .num-wrap{
     padding-top: 45px;
 }
@@ -450,8 +423,6 @@
     right: 10px;
     color: #2034EA;
 }
-
-
 .event02-bg{
     position: absolute;
     width: 100%;
@@ -460,7 +431,6 @@
     background-color: #8AE3FF;
     z-index: -100;
 }
-
 /* evnet1 end */
 .event02{
     position: relative;
@@ -486,7 +456,6 @@
     animation-delay: 0.7s;
     animation-fill-mode: forwards;
 }
-
 .event02 .title,
 .event02 .num-wrap{
     color: #2034EA;
@@ -499,16 +468,6 @@
 .event02 .period{
     position: relative;
 }
-/* .event02::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #8AE3FF;
-    z-index: -100;
-} */
 .ticket{
     position: relative;
     overflow: hidden;
@@ -529,16 +488,12 @@
     position: absolute;
     width: 2px;
     height: 100%;
-    /* background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%); */
-    /* background-image: linear-gradient(rgba(255, 255, 255, 0) 28.24%, #FFFFFF 28.25%, #FFFFFF 66.79%, rgba(255, 255, 255, 0) 66.8%); */
     background-image: linear-gradient(#fff 33%, rgba(255,255,255,0) 0%);
     background-position: right;
     background-size: 2px 17px;
     background-repeat: repeat-y;
     top: 0;
     left: 80px;
-    /* border: 1px solid #fff;
-    border-style: dashed; */
 }
 .ticket-bg{
     width: 100%;
@@ -557,27 +512,16 @@
     color: #2034EA;
     mix-blend-mode: color-burn;
 }
-/* .ticket-text>span{
-    display: block;
-    color: #43D2FF;
-} */
 .ticket-text p{
     font-size: 60px;
-    /* color: #2034EA; */
     font-weight: 700;
-
-    /* mix-blend-mode: hard-light; */
     mix-blend-mode: color-dodge;
-
-    /* color: #fff;
-    -webkit-text-stroke: 1px #2034EA; */
 }
 .ticket-text p>span{
     font-size: 30px;
 }
 
 /* evnet end */
-
 .caution{
     font-size: 14px;
     padding: 30px 0;
@@ -587,11 +531,7 @@
     color: #828282;
 }
 
-
-
-
 /* background */
-
 .background{
     position: absolute;
     top: 0;
@@ -603,9 +543,6 @@
     z-index: -999;
 }
 .bg-circle{
-    /* position: relative; */
-
-
     position: absolute;
     background: linear-gradient(162deg, rgba(255,227,227,1) 23%, rgba(228,233,238,1) 40%, rgba(201,238,250,1) 70%);
     border-radius: 100%;
@@ -613,12 +550,10 @@
 }
 .move-right{
     position: absolute;
-    
     top: 108px;
     left: -300px;
     opacity: 0;
     z-index: -999;
-
     animation: move-right 0.7s cubic-bezier(.7,.86,.78,1);
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -640,7 +575,6 @@
     width: 1100px;
     height: 1100px;
     z-index: -999;
-
     animation: pink-blue-bg 5s ease infinite;
 }
 .bg-circle-02{
@@ -649,7 +583,6 @@
     width: 1100px;
     height: 1100px;
     z-index: -970;
-
     animation: pink-blue-bg 8s ease infinite;
 }
 .bg-circle-03{
@@ -658,7 +591,6 @@
     width: 500px;
     height: 500px;
     z-index: -997;
-
     animation: pink-blue-bg 4s ease infinite;
 }
 
@@ -671,7 +603,6 @@
 /* background end */
 
 /* footer */
-
 footer{
     position: relative;
     background-color: #C9EEFA;
@@ -679,7 +610,7 @@ footer{
 
 
 /* ============
-media
+media query
 ============ */
 
 @media(max-width:1300px){
@@ -697,8 +628,6 @@ media
     .event02{
         border-radius: 350px 0px 0px 0px;
     }
-
-    
     .bg-circle-01{
         top: 65px;
         left:-200px;
@@ -879,8 +808,6 @@ media
     .event01 .caption{
         left: -10px;
     }
-
-
     .bg-circle-01{
         top: 160px;
         left: -275px;

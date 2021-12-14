@@ -16,7 +16,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
 // scrolltriger animaion
 
 $(".event01>.event-num").each(function(){
